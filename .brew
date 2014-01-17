@@ -1,0 +1,34 @@
+#!/bin/bash
+
+sudo -v # ask for password only at the beginning
+
+brew update
+brew upgrade
+
+brew install ack
+brew install git
+brew install mercurial
+brew install mysql
+
+brew install legit
+legit install
+
+brew install node
+brew install vim
+
+brew cask install spotify
+brew cask install alfred
+brew cask alfred link
+brew cask install google-chrome
+brew cask install dropbox
+brew cask install evernote
+brew cask install f-lux
+brew cask install iterm2
+brew cask install virtualbox
+brew cask install vlc
+brew cask install transmission
+brew cask install firefox
+brew cask install the-unarchiver
+brew cask install skype
+
+brew cleanup

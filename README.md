@@ -43,3 +43,9 @@ You can use [brew cask] to download your list of native apps using CLI instead o
 ```sh
 ./.cask
 ```
+
+##Credit & Feedback:
+[Mathias Bynen's dotfiles](https://github.com/mathiasbynens/dotfiles)
+His collection of osx defaults is really amazing and as I further customize my own dotfiles, he has done most of the heavy lifting.
+
+Please highlight an [issue](https://github.com/jurvis/dotfiles/issues) if you see one!

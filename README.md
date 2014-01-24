@@ -33,10 +33,13 @@ When you set up a new mac, running some sensible OS X defaults set by Mathias an
 REMEMBER: this is how I like my Mac set up and running and might not work for everyone - do customize it according to your own requirements and comment out what you don't need! For example, I disabled notification centre!
 
 ### Install Homebrew
-Running this will help install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew)
+Running this will help install some common [Homebrew](http://brew.sh/) formulae.
+```sh
+./.brew
+```
 
 ### Installing native apps with [brew cask]
-You can use [brew cask] to download native apps using CLI instead of GUI by running:
+You can use [brew cask] to download your list of native apps using CLI instead of GUI by running:
 ```sh
 ./.cask
 ```

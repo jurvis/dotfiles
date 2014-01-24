@@ -9,6 +9,10 @@ brew install ack
 brew install git
 brew install mercurial
 brew install mysql
+brew install postgresql
+
+brew tap phinze/cask
+brew install brew-cask
 
 brew install legit
 legit install
@@ -24,11 +28,15 @@ brew cask install dropbox
 brew cask install evernote
 brew cask install f-lux
 brew cask install iterm2
+brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
 brew cask install transmission
 brew cask install firefox
 brew cask install the-unarchiver
 brew cask install skype
+brew cask install instacast
+brew cask install twitter
+brew cask install hipchat
 
 brew cleanup

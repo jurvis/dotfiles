@@ -1,3 +1,5 @@
+# Shamelessly ripped off Paulmillr's Sublime Text configs https://github.com/paulmillr/dotfiles
+
 echo 'Applying sublime config...'
   st=$(pwd)/sublime/Packages
   as="$HOME/Library/Application Support/Sublime Text 2/Packages"

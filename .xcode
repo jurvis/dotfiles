@@ -1,6 +1,0 @@
-echo 'Copying Xcode config...'
-  xc=$(pwd)/xcode/Packages
-  mkdir ~/Library/Developer/Xcode/UserData/FontAndColorThemes
-  as=~/Library/Developer/Xcode/UserData/FontAndColorThemes
-  cp -r xcode/. $as
-  chmod -R +x $as

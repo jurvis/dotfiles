@@ -33,6 +33,5 @@ brew cask install transmission
 brew cask install firefox
 brew cask install the-unarchiver
 brew cask install skype
-brew cask install twitter
 
 brew cleanup

@@ -14,6 +14,11 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
+# Go Stuff
+export GOPATH=$HOME/code/gocode
+export GOCODE=$GOPATH/src/github.com/jurvis
+export PATH=$PATH:$GOPATH/bin
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."

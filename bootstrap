@@ -19,8 +19,10 @@ def link(path, link_name)
 end
 
 puts "Bootstrapping Dotfiles..."
-link "~/dotfiles/vim/.vimrc", "~/.vimrc"
+link "~/dotfiles/vim/", "~/.vim"
+link "~/dotfiles/.vimrc", "~/.vimrc"
+link "~/dotfiles/.tmux.conf", "~/.tmux.conf"
 link "~/dotfiles/zsh/.zshrc", "~/.zshrc"
-link "~/dotfiles/vim/vim", "~/.vim"
+link "~/dotfiles/.vim/vim", "~/.vim"
 
 puts "done"

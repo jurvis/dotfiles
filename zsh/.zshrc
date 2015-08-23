@@ -36,7 +36,10 @@ alias g="git"
 alias sl="subl"
 alias h="history"
 alias j="jobs"
-alias gopath='export GOPATH=$(pwd)'
+alias gopath="export GOPATH=$(pwd)"
+alias learnhaskell="cd ~/Projects/LearnHaskell"
+alias macaddrgen="openssl rand -hex 6 | sed 's/\(..\)/\1:/g;s/.$//'"
+alias macaddrrestore="sudo ifconfig en0 ether 60:03:08:a2:9b:ae"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -77,9 +80,6 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
-
-# Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
@@ -173,6 +173,11 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
+# MacSpoof Shortcuts
+alias macspooflist="spoof-mac.py list"
+alias macspoofscramble="spoof-mac.py randomize en0"
+alias macspoofreset="spoof-mac.py reset wi-fi"
+
 # Faster npm for europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
 
@@ -181,3 +186,4 @@ if [ -e /usr/share/terminfo/x/xterm-256color ]; then
 				else
 								        export TERM='xterm-color'
 								fi
+export PATH="/usr/local/sbin:$PATH"

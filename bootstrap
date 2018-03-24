@@ -19,7 +19,7 @@ def link(path, link_name)
 end
 
 puts "Installing Environments..."
-# Dir.glob('./*/setup.sh').each { |f| system("sh #{f}") }
+Dir.glob('./*/setup.sh').each { |f| system("sh #{f}") }
 
 # puts "Bootstrapping Dotfiles..."
 link "~/dotfiles/zsh/.zshrc", "~/.zshrc"

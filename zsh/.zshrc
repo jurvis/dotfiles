@@ -178,12 +178,6 @@ alias macspooflist="spoof-mac.py list"
 alias macspoofscramble="spoof-mac.py randomize en0"
 alias macspoofreset="spoof-mac.py reset wi-fi"
 
-# Faster npm for europeans
-command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
-
-if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-				        export TERM='xterm-256color'
-				else
-								        export TERM='xterm-color'
-								fi
-export PATH="/usr/local/sbin:$PATH"
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

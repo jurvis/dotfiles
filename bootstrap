@@ -18,11 +18,10 @@ def link(path, link_name)
   FileUtils.ln_s(path, link_name)
 end
 
-puts "Bootstrapping Dotfiles..."
-link "~/dotfiles/vim/", "~/.vim"
-link "~/dotfiles/.vimrc", "~/.vimrc"
-link "~/dotfiles/.tmux.conf", "~/.tmux.conf"
+puts "Installing Environments..."
+# Dir.glob('./*/setup.sh').each { |f| system("sh #{f}") }
+
+# puts "Bootstrapping Dotfiles..."
 link "~/dotfiles/zsh/.zshrc", "~/.zshrc"
-link "~/dotfiles/.vim/vim", "~/.vim"
 
 puts "done"
